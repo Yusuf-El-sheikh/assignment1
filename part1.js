@@ -150,7 +150,7 @@ function p8(value)
   return;
 }
 
-/*
+/* test cases :D
 p8(3);
 p8(5);
 p8(30);
@@ -158,4 +158,40 @@ p8(31);
 */
 
 // problem - 9
+
+const p9 = (val) => {return  val * val;};
+
+//console.log(p9(2));
+
+// problem - 10
+
+let person = {
+  name : "john",
+  age : "30"
+};
+
+function p10(obj)
+{
+  return obj.name + " is " + obj.age + " years old";
+}
+
+//console.log(p10(person));
+
+// problem - 11
+
+function p11(...values)
+{
+  let sum = 0;
+
+  for(let value of values)
+  {
+    sum += value;
+  }
+
+  return sum;
+}
+
+//console.log(p11(1,2,3,4,5));
+
+// problem - 12
 
