@@ -9,6 +9,9 @@
 *for of* just makes a loop that iterates over an object that is iteratable, 
 it doesnt require you to use any indexing to access the elements of said object, it automatically collects it.
 
+
+for each is better when you want to make a simple change on all elements, but for better control of flow i would use 
+for of
 */
 
 
@@ -31,7 +34,7 @@ yet is still inaccessable because its before the original declaration.
 /* Q - 3
 
 " == " only compares the value of two variables, it also coerces different data types for example 1 == '1' is true,
-" === " compares both value and types so 1 == '1'. 
+" === " compares both value and types so 1 === '1' is false. 
 */
 
 

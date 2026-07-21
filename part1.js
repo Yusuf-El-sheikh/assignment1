@@ -12,46 +12,55 @@ function p1() {
 
   s = Number(s) + 7;
 
-  console.log(s);
+  return s;
 }
+
+//console.log(p1());
 
 // problem - 2
 
 function p2(value) {
-  console.log(value || "invalid");
+  return value || "invalid";
 }
 
 /* test cases :D
-p2(0);
-p2(-0);
-p2("");
-p2(null);
-p2(undefined);
+console.log(p2(0));
+console.log(p2(-0));
+console.log(p2(""));
+console.log(p2(null));
+console.log(p2(undefined));
 
-p2(100);
+console.log(p2(100));
 */
 
 // problem - 3
 
 function p3() {
+  let result = [];
+
   for (let i = 0; i < 11; i++) {
     if (i % 2 == 0) {
       continue;
     }
-
-    console.log(i);
+    result.push(i);
   }
+
+  return result;
 }
+
+//console.log(p3()); // [1, 3, 5, 7, 9]
 
 // problem - 4
 
 function p4() {
-  let arr = [1, 2, 3, 4, 5, 6, 8, , 9, 10, 11, 12];
+  let arr = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12];
 
   arr = arr.filter(function(num) { return num % 2 == 0 });
 
-  console.log(arr);
+  return arr;
 }
+
+//console.log(p4());
 
 // problem - 5
 
@@ -61,8 +70,10 @@ function p5() {
 
   let arr3 = [...arr1, ...arr2];
 
-  console.log(arr3);
+  return arr3;
 }
+
+//console.log(p5());
 
 // problem - 6
 
@@ -71,56 +82,49 @@ function p6(value) {
   (value) {
     case 1:
       {
-        console.log("sunday");
-        break;
+        return "sunday";
       }
 
     case 2:
       {
-        console.log("monday");
-        break;
+        return "monday";
       }
 
     case 3:
       {
-        console.log("tuesday");
-        break;
+        return "tuesday";
       }
 
     case 4:
       {
-        console.log("wednesday");
-        break;
+        return "wednesday";
       }
 
     case 5:
       {
-        console.log("thursday");
-        break;
+        return "thursday";
       }
 
     case 6:
       {
-        console.log("friday");
-        break;
+        return "friday";
       }
 
     case 7:
       {
-        console.log("saturday");
-        break;
+        return "saturday";
       }
   }
 }
 
 /* test cases again :D
-p6(1);
-p6(2);
-p6(3);
-p6(4);
-p6(5);
-p6(6);
-p6(7);
+console.log(p6(1));
+console.log(p6(2));
+console.log(p6(3));
+console.log(p6(4));
+console.log(p6(5));
+console.log(p6(6));
+console.log(p6(7));
 */
 
 // problem - 7
@@ -131,8 +135,10 @@ function p7()
   
   let len_arr = arr.map(function len(str) {return str.length ;});
   
-  console.log(len_arr);
+  return len_arr;
 }
+
+//console.log(p7());
 
 // problem - 8
 
@@ -140,21 +146,17 @@ function p8(value)
 {
   if( (value % 3 == 0) && (value % 5 == 0) )
   {
-    console.log("divisible by both");
-    
-    return;
+    return "divisible by both";
   }
 
-  console.log("not divisible by both");
-  
-  return;
+  return "not divisible by both";
 }
 
 /* test cases :D
-p8(3);
-p8(5);
-p8(30);
-p8(31);
+console.log(p8(3));
+console.log(p8(5));
+console.log(p8(30));
+console.log(p8(31));
 */
 
 // problem - 9
@@ -209,11 +211,9 @@ function p12()
 
 // problem - 13
 
-function p13()
+function p13(arr)
 {
-  let arr = [1, 3, 7, 2, 4];
-
-  let max = -1;
+  let max = arr[0];
 
   for(let i = 0 ; i < arr.length ; i++)
   {
@@ -234,7 +234,7 @@ function p14(obj)
 {
   let arr = [];
 
-  for(key in obj)
+  for(let key in obj)
   {
     arr.push(key)
   }
@@ -248,7 +248,7 @@ function p14(obj)
 
 function p15(string)
 {
-  arr = string.split(" ");
+  let arr = string.split(" ");
 
   return arr;
 }
