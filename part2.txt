@@ -11,6 +11,9 @@ it doesnt require you to use any indexing to access the elements of said object,
 
 */
 
+
+
+
 /* Q - 2
     
 hoisting : hoisting is the behaviour that js does right before executing, which is moving variable declarations and 
@@ -22,16 +25,30 @@ yet is still inaccessable because its before the original declaration.
 -this is why you cant use a variable declared with let before its defintion btw.- 
 */
 
+
+
+
 /* Q - 3
 
 " == " only compares the value of two variables, it also coerces different data types for example 1 == '1' is true,
 " === " compares both value and types so 1 == '1'. 
 */
 
+
+
+
 /* Q - 4
+try and catch work by building two blocks, the first being try which is trying a block of code inside of it,
+if it throws an error, js stops executing the rest of the code in the try block and handles the error in the catch block using
+the error variable that contains the error information.
 
-
+its important to be used in async programming since you will be handeling promises, instead of rejecting or not resolving a promise 
+without knowing why it failed, or even break your code, you can have a more predictable mangement in case of problems,
+which is both important during the program lifecycle and during debugging.
 */
+
+
+
 
 /* Q - 5 
 
